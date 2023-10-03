@@ -1,9 +1,9 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useState } from "react";
 import s from "./SelectTour.module.scss";
 import Arr from "@/utils/array";
 import Card from "@/src/components/common/Card";
 
-const menuArr = [
+const data = [
   { title: "Популярные", isSelect: true },
   { title: "Авторские", isSelect: false },
   { title: "Походы", isSelect: false },
@@ -12,6 +12,17 @@ const menuArr = [
 ];
 
 const SelectTour = () => {
+  const [menuArr, setMenuArr] = useState(data);
+  const Change = (key) => {
+    let arr = [...menuArr];
+    arr.forEach((item) => {
+      item.isSelect = false;
+    });
+    arr[key].isSelect = true;
+
+    setMenuArr(arr);
+  };
+
   return (
     <section className={s.root}>
       <h2 className={s.select_tour__title}>Выбери свой тур</h2>
@@ -20,12 +31,12 @@ const SelectTour = () => {
           return (
             <li className={s.select_tour_menu__item} key={key}>
               <a
-                href={"/"}
                 className={
                   item.isSelect
                     ? `${s.select_tour_menu__link} ${s.active}`
                     : `${s.select_tour_menu__link}`
                 }
+                onClick={() => Change(key)}
               >
                 {item.title}
               </a>
