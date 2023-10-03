@@ -13,7 +13,6 @@ const HomePage = () => {
   return (
     <div className={s.root}>
       <Hero />
-
       <SelectTour />
       <TourForm />
       <Reviews />

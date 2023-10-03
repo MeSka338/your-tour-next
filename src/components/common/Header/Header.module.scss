@@ -1,7 +1,11 @@
-@import "@/styles/mixins.scss";
+@import "@/styles/typografy.scss";
 
 .root {
   width: 100%;
+  position: absolute;
+  z-index: 1000;
+  color: $White;
+  top: 0;
 }
 .header__nav_wrapper {
   width: 100%;
