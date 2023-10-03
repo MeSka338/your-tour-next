@@ -10,6 +10,7 @@ const Layout = ({ title, keywords, description, children }) => {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
+        <link rel="icon" href="/YT-main-icon.svg" sizes="any"></link>
       </Head>
       <Header />
       <div>{children}</div>
