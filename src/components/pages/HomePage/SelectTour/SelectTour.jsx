@@ -14,11 +14,11 @@ const menuArr = [
 const SelectTour = () => {
   return (
     <section className={s.root}>
-      <h2 className={`${s.select_tour__title}`}>Выбери свой тур</h2>
+      <h2 className={s.select_tour__title}>Выбери свой тур</h2>
       <ul className={s.select_tour__menu}>
         {menuArr.map((item, key) => {
           return (
-            <li className={`${s.select_tour_menu__item}`} key={key}>
+            <li className={s.select_tour_menu__item} key={key}>
               <a
                 href={"/"}
                 className={

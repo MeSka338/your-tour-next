@@ -9,8 +9,8 @@ const Card = ({ img, title, subtitle }) => {
         <div className={s.grad}></div>
         <img src={img} alt={`img`} className={s.card_bg} />
         <div className={s.titles_container}>
-          <h3 className={`${s.card__title}`}>{title} </h3>
-          <p className={`${s.card__subtitle}`}>{subtitle}</p>
+          <h3 className={s.card__title}>{title} </h3>
+          <p className={s.card__subtitle}>{subtitle}</p>
         </div>
         <BtnSec />
       </div>

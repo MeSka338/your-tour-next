@@ -37,29 +37,29 @@ const Header = () => {
             </a>
           </div>
           <ul className={s.menu}>
-            <li className={`${s.menu__item}`}>
+            <li className={s.menu__item}>
               <a href="/" className={s.menu__link}>
                 Туры
               </a>
             </li>
-            <li className={`${s.menu__item}`}>
+            <li className={s.menu__item}>
               <a href="/" className={s.menu__link}>
                 Создать тур
               </a>
             </li>
-            <li className={`${s.menu__item}`}>
+            <li className={s.menu__item}>
               <a href="/" className={s.menu__link}>
                 Отзывы
               </a>
             </li>
-            <li className={`${s.menu__item}`}>
+            <li className={s.menu__item}>
               <a href="/" className={s.menu__link}>
                 Истории
               </a>
             </li>
           </ul>
 
-          <p className={`${s.contact}`}>+7 999 999 99 99</p>
+          <p className={s.contact}>+7 999 999 99 99</p>
         </nav>
       </div>
     </header>

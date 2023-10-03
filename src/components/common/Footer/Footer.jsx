@@ -11,7 +11,7 @@ const Footer = () => {
         />
         <div className={s.footer__content}>
           <h3 className={s.footer__title}>Пора в путешествие вместе с нами!</h3>
-          <p className={`${s.footer__subtitle} `}>
+          <p className={s.footer__subtitle}>
             Напиши на почту и узнай подробности
             <br />
             на{" "}
@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
       <div className={s.contacts_container}>
         <div className={s.footer__contacts}>
-          <p className={`${s.contacts__title} `}>Наши социальные сети</p>
+          <p className={s.contacts__title}>Наши социальные сети</p>
           <div className={`${s.contacts__socials} ${s.socials}`}>
             <div className={`${s.contacts__item} ${s.socials__item}`}>
               <img

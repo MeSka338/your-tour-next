@@ -1,6 +1,7 @@
-@import "../../../../styles/mixins.scss";
+@import "@/styles/mixins.scss";
 
 .root {
+  @include p_small;
   width: 118px;
   height: 34px;
 
